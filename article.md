@@ -1,3 +1,5 @@
+# Faire du ecommerce avec React & Stripe
+
 Accepting a card payment using Stripe is a two-step process, with a client-side and a server-side action:
 
 From your website running in the customer’s browser, Stripe securely collects your customer’s payment information and returns a representative token. This, along with any other form data, is then submitted by the browser to your server.

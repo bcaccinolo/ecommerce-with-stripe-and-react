@@ -9,15 +9,11 @@
 - DONE build the shopping page correctly
 - DONE envoyer le bon montant
 - DONE envoyer le bon nom
-- DONE stocker correctement la clef API Stripe
-    - on the backend part
-    - on the client part
+- DONE stocker correctement la clef API Stripe (backend & frontend)
+- DONE clean le CSS
 
-- clean le CSS
-
-- rédiger l'article
+-> rédiger l'article
 
 ## Note
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-
