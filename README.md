@@ -17,3 +17,7 @@
 ## Note
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
+## Screenshot
+
+![alt text](https://github.com/bcaccinolo/stripe-react-article/blob/master/public/img/screenshot.png "Logo Title Text 1")
