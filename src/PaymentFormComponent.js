@@ -5,16 +5,15 @@ import {
   CardCVCElement,
   injectStripe } from 'react-stripe-elements';
 import queryString from 'query-string';
-import Error from './messageError';
-import Success from './messageSuccess';
+import Alert from './Alert';
 
 class _Form extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      error: '',
-      success: ''
+      alertMessage: '',
+      alertStyle: ''
     };
   }
 
@@ -45,16 +44,15 @@ class _Form extends Component {
           throw val.message;
         }
       })
-      .then(success => this.setState({success: success, error: ''}))
-      .catch(error => this.setState({error: error, success: ''}));
+      .then(success => this.setState({alertMessage: success, alertStyle: 'success'}))
+      .catch(error => this.setState({alertMessage: error, alertStyle: 'danger'}));
   }
 
   render() {
     return (
       <form onSubmit={(ev) => this.handleSubmit(ev)}>
 
-        <Error msg={this.state.error} />
-        <Success msg={this.state.success} />
+        <Alert msg={this.state.alertMessage} style={this.state.alertStyle} />
 
         <div className="form-group">
           <label>CardNumberElement</label>
