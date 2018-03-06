@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StripeProvider, Elements } from 'react-stripe-elements';
 import PaymentForm from './PaymentForm';
-const pjson = require('../package.json');
+import pjson from '../package.json';
 
 class Payment extends Component {
   render() {
