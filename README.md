@@ -1,18 +1,17 @@
-## Todo
+## Launch the project
 
-- DONE integrate Stripe Element.js
-- DONE do a Stripe charge
-- DONE  bring together the front & back together (using proxy setting)
-- DONE handle Element Card errors like wrong number
-- DONE add bootstrap 4
-- DONE handle errors side project
-- DONE build the shopping page correctly
-- DONE envoyer le bon montant
-- DONE envoyer le bon nom
-- DONE stocker correctement la clef API Stripe (backend & frontend)
-- DONE clean le CSS
+### Launch the backend
+```
+cd backend
+npm install
+node app.js
+```
 
--> rédiger l'article
+### Launch the frontend
+```
+npm install
+npm run start
+```
 
 ## Note
 
