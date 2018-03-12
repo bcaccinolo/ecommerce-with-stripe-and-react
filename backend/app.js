@@ -3,11 +3,10 @@ const express = require('express');
 const app = express();
 const port = 4000;
 
-var stripe = require("stripe")(pjson.stripeSecretKey);
+var stripe = require('stripe')(pjson.stripeSecretKey);
 
 
 app.get('/api', function(req, res){
-  console.log(req.query);
   const cardToken = req.query.token;
   const amount = req.query.amount;
   // Charge the user's card:
@@ -17,8 +16,6 @@ app.get('/api', function(req, res){
     description: 'Example charge',
     source: cardToken,
   }, (err, charge) => {
-    console.log(charge);
-
     if (err) {
       const message = err.type + ' : ' + err.message;
       res.json({ok: false, message: message});
@@ -28,5 +25,5 @@ app.get('/api', function(req, res){
   });
 });
 
-app.listen(port)
-console.log('Web server listening on port http://localhost:' + port)
+app.listen(port);
+console.log('Web server listening on port http://localhost:' + port);
